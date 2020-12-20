@@ -1,0 +1,7 @@
+[Thu Mar 14 12:50:28.003606 2019] [mpm_winnt:notice] [pid 5652:tid 816] AH00455: Apache/2.4.6 (Win32) PHP/5.4.17 configured -- resuming normal operations
+[Thu Mar 14 12:50:28.003606 2019] [mpm_winnt:notice] [pid 5652:tid 816] AH00456: Apache Lounge VC10 Server built: Jul 16 2013 11:15:41
+[Thu Mar 14 12:50:28.003606 2019] [core:notice] [pid 5652:tid 816] AH00094: Command line: 'D:\\Education\\University of Peradeniya\\Computer Engineering\\Semester 04\\CO226 Database Systems\\Project\\USBWebserver v8.6(1)/apache2/bin/httpd_usbwv8.exe -d D:/Education/University of Peradeniya/Computer Engineering/Semester 04/CO226 Database Systems/Project/USBWebserver v8.6(1)/apache2'
+[Thu Mar 14 12:50:28.003606 2019] [mpm_winnt:notice] [pid 5652:tid 816] AH00418: Parent: Created child process 2444
+[Thu Mar 14 12:50:28.550423 2019] [mpm_winnt:notice] [pid 2444:tid 848] AH00354: Child: Starting 64 worker threads.
+[Thu Mar 14 12:50:38.391881 2019] [:error] [pid 2444:tid 1368] [client ::1:50868] PHP Notice:  Undefined variable: query in D:\\Education\\University of Peradeniya\\Computer Engineering\\Semester 04\\CO226 Database Systems\\Project\\USBWebserver v8.6(1)\\root\\new\\server.php on line 58, referer: http://localhost:8080/new/login.php
+[Thu Mar 14 12:50:38.391881 2019] [:error] [pid 2444:tid 1368] [client ::1:50868] PHP Warning:  mysqli_query(): Empty query in D:\\Education\\University of Peradeniya\\Computer Engineering\\Semester 04\\CO226 Database Systems\\Project\\USBWebserver v8.6(1)\\root\\new\\server.php on line 58, referer: http://localhost:8080/new/login.php

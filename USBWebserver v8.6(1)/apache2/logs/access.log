@@ -1,0 +1,11 @@
+::1 - - [14/Mar/2019:12:50:29 +0530] "GET / HTTP/1.1" 200 195
+::1 - - [14/Mar/2019:12:50:31 +0530] "GET /new/ HTTP/1.1" 302 2620
+::1 - - [14/Mar/2019:12:50:31 +0530] "GET /new/login.php HTTP/1.1" 200 1503
+::1 - - [14/Mar/2019:12:50:38 +0530] "POST /new/login.php HTTP/1.1" 302 1958
+::1 - - [14/Mar/2019:12:50:38 +0530] "GET /new/index.php HTTP/1.1" 200 2734
+::1 - - [14/Mar/2019:12:50:38 +0530] "GET /new/img1.jpg HTTP/1.1" 200 742971
+::1 - - [14/Mar/2019:12:50:42 +0530] "GET /new/department.php HTTP/1.1" 200 9510
+::1 - - [14/Mar/2019:12:50:43 +0530] "GET /new/img14.jpg HTTP/1.1" 200 230479
+::1 - - [14/Mar/2019:12:50:43 +0530] "GET /new/img13.jpg HTTP/1.1" 200 3266478
+::1 - - [14/Mar/2019:12:50:50 +0530] "GET /new/DepartmentSearch.php?dept= HTTP/1.1" 200 1545
+::1 - - [14/Mar/2019:12:50:59 +0530] "GET /new/department.php HTTP/1.1" 200 9510

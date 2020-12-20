@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+
+<style type="text/css">
+
+body
+{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img1.jpg);
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 120%;
+}
+  
+  #department {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  color: white;
+}
+
+#department td, #department th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#department tr:nth-child(even){background-color: #transparent;}
+
+#department tr:hover {background-color: #ddd;}
+
+#department th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+</style>
+
+<br><br>
+
+<h2 align="center">Data Has Been Added</h2>
+
+<table id = "department">
+  
+<br><br>
+
+<?php
+
+include "servernext.php";
+
+$sql = "SELECT * FROM department";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+  
+  echo "<tr><th>Dept number</th><th>Dept name</th><th>No of Employees</th></tr>";
+  
+  
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<tr>
+        <td>" . $row["Dep Number"]."</td>
+      <td>" . $row["Dep Name"]."</td>
+      <td>" . $row["No of Employees"]."</td></tr>";
+    
+    }
+  echo "</table>";
+  
+} else {
+   
+}
+   echo "<br>";
+?>
